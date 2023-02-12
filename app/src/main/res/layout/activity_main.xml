@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:id="@+id/All_Clear"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_circle_button"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/Plus_Minus"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_circle_button"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/Percent"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_circle_button"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/Divide"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_orange_button"
+                android:text="%" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Num7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_number_button"
+                android:text="7"
+                />
+            <Button
+                android:id="@+id/Num8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_number_button"
+                android:text="8"
+                />
+
+            <Button
+                android:id="@+id/Num9"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_number_button"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/Multi"
+                android:background="@drawable/shape_for_orange_button"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:text="X"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Num4"
+                android:background="@drawable/shape_for_number_button"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:text="4"
+                />
+            <Button
+                android:id="@+id/Num5"
+                android:background="@drawable/shape_for_number_button"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:text="5"
+                />
+
+            <Button
+                android:id="@+id/Num6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_number_button"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/Minus"
+                android:background="@drawable/shape_for_orange_button"
+                android:layout_margin="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="-"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Num1"
+                android:background="@drawable/shape_for_number_button"
+                android:layout_margin="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/Num2"
+                android:background="@drawable/shape_for_number_button"
+                android:layout_margin="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="2"
+                />
+
+            <Button
+                android:id="@+id/Num3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_number_button"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/Plus"
+                android:background="@drawable/shape_for_orange_button"
+                android:layout_margin="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="+"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Num0"
+                android:background="@drawable/shape_for_number_button"
+                android:layout_margin="5dp"
+                android:layout_span="2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="0"
+                />
+
+            <Button
+                android:id="@+id/Point"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_for_number_button"
+                android:text="." />
+
+            <Button
+                android:id="@+id/Turn"
+                android:background="@drawable/shape_for_orange_button"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:text="="
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>
