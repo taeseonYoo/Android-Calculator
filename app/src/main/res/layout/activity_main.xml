@@ -19,13 +19,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/result"
+            android:layout_gravity="bottom"
+            android:textSize="60dp"
+            android:text="0"
+            android:gravity="right"
+            android:textColor="@color/white"
             />
     </LinearLayout>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:gravity="bottom"
         android:stretchColumns="*">
 
         <TableRow
@@ -37,6 +43,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_circle_button"
                 android:text="AC" />
 
@@ -45,6 +52,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_circle_button"
                 android:text="+/-" />
 
@@ -53,6 +61,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_circle_button"
                 android:text="%" />
 
@@ -61,8 +70,9 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="40dp"
                 android:background="@drawable/shape_for_orange_button"
-                android:text="%" />
+                android:text="÷" />
         </TableRow>
 
         <TableRow
@@ -72,6 +82,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
                 android:text="7"
                 />
@@ -80,6 +91,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
                 android:text="8"
                 />
@@ -89,6 +101,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
                 android:text="9" />
 
@@ -98,7 +111,8 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
-                android:text="X"
+                android:textSize="40dp"
+                android:text="×"
                 />
         </TableRow>
         <TableRow
@@ -109,6 +123,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:text="4"
                 />
             <Button
@@ -117,6 +132,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:text="5"
                 />
 
@@ -125,6 +141,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
                 android:text="6" />
 
@@ -134,7 +151,8 @@
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:text="-"
+                android:textSize="40dp"
+                android:text="－"
                 />
         </TableRow>
         <TableRow
@@ -145,6 +163,7 @@
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
+                android:textSize="35dp"
                 android:text="1"
                 />
             <Button
@@ -153,6 +172,7 @@
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
+                android:textSize="35dp"
                 android:text="2"
                 />
 
@@ -161,6 +181,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
                 android:text="3" />
 
@@ -170,37 +191,42 @@
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
+                android:textSize="40dp"
                 android:text="+"
                 />
         </TableRow>
+
         <TableRow
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <Button
                 android:id="@+id/Num0"
-                android:background="@drawable/shape_for_number_button"
-                android:layout_margin="5dp"
-                android:layout_span="2"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:layout_span="2"
+                android:background="@drawable/shape_for_oval"
                 android:text="0"
-                />
+                android:textSize="35dp" />
 
             <Button
                 android:id="@+id/Point"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
+                android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
                 android:text="." />
 
             <Button
                 android:id="@+id/Turn"
-                android:background="@drawable/shape_for_orange_button"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="5dp"
-                android:text="="
-                />
+                android:textSize="40dp"
+                android:background="@drawable/shape_for_orange_button"
+                android:text="=" />
         </TableRow>
 
     </TableLayout>
