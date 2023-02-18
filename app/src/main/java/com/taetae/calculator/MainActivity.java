@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
         num = new Button[10]; //button array
         tv = findViewById(R.id.result);
         for(int i=0;i<10;i++){
