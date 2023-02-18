@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
     String number="";
     String number2 = "";
     String tmp ;
-    Integer ruf;
     Double dtmp;
     Double ruf1;
+    boolean chos=false;
     char ch='\0';  // 자바는 char 형에서 char ch = '';식의 초기화를 허용하지 않음
     Button plus,minus,div,mul,result,allc,plma,percent,point;
     Integer[] numId = {R.id.Num0,R.id.Num1,R.id.Num2,R.id.Num3,R.id.Num4,R.id.Num5
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
 
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         plma = findViewById(R.id.Plus_Minus);
         percent = findViewById(R.id.Percent);
         point = findViewById(R.id.Point);
+
 
 
         plus.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
         for(int i=0;i<10;i++){
             final int index;
             index = i;
@@ -112,7 +116,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     tmp = tv.getText().toString();
-
+                    chos = true;
+                    if(chos == true) allc.setText("C");
 
                     if(tmp.equals("0") && tmp.length()==1) {
                         number =  num[index].getText().toString();
@@ -135,26 +140,45 @@ public class MainActivity extends AppCompatActivity {
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tmp = tv.getText().toString();
 
+                tmp = tv.getText().toString();
 
                 switch(ch){
                     case '+':
-                        ruf = Integer.parseInt(number2) + Integer.parseInt(tmp);
-                        tv.setText(ruf.toString());
+                        ruf1 = Double.parseDouble(number2)+Double.parseDouble(tmp);
+                        int k = ruf1.intValue();
+                        if( k == ruf1 ){
+                            tv.setText(Integer.toString(k));
+                        }
+                        else
+                            tv.setText(ruf1.toString());
                         break;
                     case '-':
-                        ruf = Integer.parseInt(number2)-Integer.parseInt(tmp);
-                        tv.setText(ruf.toString());
+                        ruf1 = Double.parseDouble(number2)-Double.parseDouble(tmp);
+                        int k2 = ruf1.intValue();
+                        if( k2 == ruf1 ){
+                            tv.setText(Integer.toString(k2));
+                        }
+                        else
+                            tv.setText(ruf1.toString());
                         break;
                     case '/':
-                        ruf1 = Double.parseDouble(number2) / Double.parseDouble(tmp);
-                        ruf1 = (Math.round(ruf1*100)/100.0);
-                        tv.setText(ruf1.toString());
+                        ruf1 = Double.parseDouble(number2)/Double.parseDouble(tmp);
+                        int k3 = ruf1.intValue();
+                        if( k3 == ruf1 ){
+                            tv.setText(Integer.toString(k3));
+                        }
+                        else
+                            tv.setText(ruf1.toString());
                         break;
                     case '*':
-                        ruf = Integer.parseInt(number2) * Integer.parseInt(tmp);
-                        tv.setText(ruf.toString());
+                        ruf1 = Double.parseDouble(number2)*Double.parseDouble(tmp);
+                        int k4 = ruf1.intValue();
+                        if( k4 == ruf1 ){
+                            tv.setText(Integer.toString(k4));
+                        }
+                        else
+                            tv.setText(ruf1.toString());
                         break;
                     default:
                         break;
@@ -170,6 +194,8 @@ public class MainActivity extends AppCompatActivity {
                 number = "";
                 number2 = "";
                 ch = '\0';
+                chos = false;
+                allc.setText("AC");
                 tv.setText("0");
 
             }
@@ -197,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 tmp = tv.getText().toString();
-                if(tmp=="") return;
+                if(tmp=="" || tmp.equals("0")) return;
 
                 dtmp = Double.parseDouble(tmp);
                 double t = dtmp/100.0;

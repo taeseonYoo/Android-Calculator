@@ -13,14 +13,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
+        android:layout_weight="2"
         >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:id="@+id/result"
             android:layout_gravity="bottom"
-            android:textSize="60dp"
+            android:textSize="70dp"
             android:text="0"
             android:gravity="right"
             android:textColor="@color/white"
@@ -41,7 +43,7 @@
             <Button
                 android:id="@+id/All_Clear"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_circle_button"
@@ -50,7 +52,7 @@
             <Button
                 android:id="@+id/Plus_Minus"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_circle_button"
@@ -59,7 +61,7 @@
             <Button
                 android:id="@+id/Percent"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_circle_button"
@@ -68,10 +70,11 @@
             <Button
                 android:id="@+id/Divide"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="40dp"
-                android:background="@drawable/shape_for_orange_button"
+                android:background="@drawable/con_button"
+                android:textColor="@drawable/con_text"
                 android:text="÷" />
         </TableRow>
 
@@ -80,7 +83,7 @@
             <Button
                 android:id="@+id/Num7"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
@@ -89,7 +92,7 @@
             <Button
                 android:id="@+id/Num8"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
@@ -99,7 +102,7 @@
             <Button
                 android:id="@+id/Num9"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
@@ -107,9 +110,10 @@
 
             <Button
                 android:id="@+id/Multi"
-                android:background="@drawable/shape_for_orange_button"
+                android:background="@drawable/con_button"
+                android:textColor="@drawable/con_text"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="40dp"
                 android:text="×"
@@ -121,7 +125,7 @@
                 android:id="@+id/Num4"
                 android:background="@drawable/shape_for_number_button"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:text="4"
@@ -130,7 +134,7 @@
                 android:id="@+id/Num5"
                 android:background="@drawable/shape_for_number_button"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:text="5"
@@ -139,7 +143,7 @@
             <Button
                 android:id="@+id/Num6"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
@@ -147,10 +151,11 @@
 
             <Button
                 android:id="@+id/Minus"
-                android:background="@drawable/shape_for_orange_button"
+                android:background="@drawable/con_button"
+                android:textColor="@drawable/con_text"
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:textSize="40dp"
                 android:text="－"
                 />
@@ -162,7 +167,7 @@
                 android:background="@drawable/shape_for_number_button"
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:textSize="35dp"
                 android:text="1"
                 />
@@ -171,7 +176,7 @@
                 android:background="@drawable/shape_for_number_button"
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:textSize="35dp"
                 android:text="2"
                 />
@@ -179,7 +184,7 @@
             <Button
                 android:id="@+id/Num3"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
@@ -187,10 +192,11 @@
 
             <Button
                 android:id="@+id/Plus"
-                android:background="@drawable/shape_for_orange_button"
+                android:background="@drawable/con_button"
+                android:textColor="@drawable/con_text"
                 android:layout_margin="5dp"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:textSize="40dp"
                 android:text="+"
                 />
@@ -203,7 +209,7 @@
             <Button
                 android:id="@+id/Num0"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:layout_span="2"
                 android:background="@drawable/shape_for_oval"
@@ -213,7 +219,7 @@
             <Button
                 android:id="@+id/Point"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="35dp"
                 android:background="@drawable/shape_for_number_button"
@@ -222,10 +228,11 @@
             <Button
                 android:id="@+id/Turn"
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:textSize="40dp"
-                android:background="@drawable/shape_for_orange_button"
+                android:background="@drawable/con_button"
+                android:textColor="@drawable/con_text"
                 android:text="=" />
         </TableRow>
 
